@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Pagetwo() {
+export default function Homelist() {
   const [movies] = useState([
     {
       Title: "How I Met Your Mother",
@@ -9,15 +9,77 @@ export default function Pagetwo() {
       Type: "series",
       Poster:
         "https://m.media-amazon.com/images/M/MV5BNjg1MDQ5MjQ2N15BMl5BanBnXkFtZTYwNjI5NjA3._V1_SX300.jpg",
+    } ,{
+        "Title": "Venom",
+        "Year": "2018",
+        "imdbID": "tt1270797",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNzAwNzUzNjY4MV5BMl5BanBnXkFtZTgwMTQ5MzM0NjM@._V1_SX300.jpg"
     },
     {
-      Title: "Drake and Josh Go Hollywood",
-      Year: "2006",
-      imdbID: "tt0492878",
-      Type: "movie",
-      Poster:
-        "https://m.media-amazon.com/images/M/MV5BMjA1NzIzNTcwNV5BMl5BanBnXkFtZTcwOTA1MTYzMQ@@._V1_SX300.jpg",
-    },
+        'Title': "Avengers: Infinity War",
+        'Year': "2018",
+        'imdbID': "tt4154756",
+        'Type': "movie",
+        'Poster':
+          "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX300.jpg",
+      },
+      {
+        'Title': "Loki",
+        'Year': "2021–",
+        'imdbID': "tt9140554",
+        'Type': "series",
+        'Poster':
+          "https://m.media-amazon.com/images/M/MV5BNTkwOTE1ZDYtODQ3Yy00YTYwLTg0YWQtYmVkNmFjNGZlYmRiXkEyXkFqcGdeQXVyNTc4MjczMTM@._V1_SX300.jpg",
+      },
+      {
+        'Title': "Black Panther",
+        'Year': "2018",
+        'imdbID': "tt1825683",
+        'Type': "movie",
+        'Poster':
+          "https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_SX300.jpg",
+      },
+      {
+        'Title': "Black Widow",
+        'Year': "2021",
+        'imdbID': "tt3480822",
+        'Type': "movie",
+        'Poster':
+          "https://m.media-amazon.com/images/M/MV5BNjRmNDI5MjMtMmFhZi00YzcwLWI4ZGItMGI2MjI0N2Q3YmIwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+      },
+      {
+        'Title': "Batman v Superman: Dawn of Justice",
+        'Year': "2016",
+        'imdbID': "tt2975590",
+        'Type': "movie",
+        'Poster':
+          "https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      },
+      {
+        'Title': "Fast & Furious 7",
+        'Year': "2015",
+        'imdbID': "tt2820852",
+        'Type': "movie",
+        'Poster':
+          "https://m.media-amazon.com/images/M/MV5BMTQxOTA2NDUzOV5BMl5BanBnXkFtZTgwNzY2MTMxMzE@._V1_SX300.jpg",
+      },
+      {
+        'Title': "How to Sell Drugs Online (Fast)",
+        'Year': "2019–",
+        'imdbID': "tt9184994",
+        'Type': "series",
+        'Poster':
+          "https://m.media-amazon.com/images/M/MV5BZjIzNTkyNjktNDdmMy00MmI4LWFlN2MtNDllYTVhZjljNWFiXkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_SX300.jpg",
+      },
+      {
+        'Title': "Fast & Furious Presents: Hobbs & Shaw",
+        'Year': "2019",
+        'imdbID': "tt6806448",
+        'Type': "movie",
+        'Poster':
+          "https://m.media-amazon.com/images/M/MV5BOTIzYmUyMmEtMWQzNC00YzExLTk3MzYtZTUzYjMyMmRiYzIwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg",
+      },
     {
       Title: "The Good Doctor",
       Year: "2017–",
@@ -27,68 +89,12 @@ export default function Pagetwo() {
         "https://m.media-amazon.com/images/M/MV5BMzZjMWEwMGMtODdhMi00NGRkLTkwZTEtNmM4NjA3M2FlNzc2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
     },
     {
-      Title: "The Good Doctor",
-      Year: "2011",
-      imdbID: "tt1582271",
-      Type: "movie",
-      Poster:
-        "https://m.media-amazon.com/images/M/MV5BMTMzODgyNTc4OF5BMl5BanBnXkFtZTcwNjcwODc3Nw@@._V1_SX300.jpg",
-    },
-    {
       Title: "Siren",
       Year: "2018–2020",
       imdbID: "tt5615700",
       Type: "series",
       Poster:
         "https://m.media-amazon.com/images/M/MV5BMjFmYjFmMDgtNjk1Zi00NTc2LWIwOGEtZWIxYTdmMWVmYWVkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
-    },
-    {
-      Title: "Siren",
-      Year: "2016",
-      imdbID: "tt4667854",
-      Type: "movie",
-      Poster:
-        "https://m.media-amazon.com/images/M/MV5BMjAwMjU3ODA4OF5BMl5BanBnXkFtZTgwOTkwNTUyMDI@._V1_SX300.jpg",
-    },
-    {
-      Title: "Siren",
-      Year: "2006",
-      imdbID: "tt0449393",
-      Type: "movie",
-      Poster:
-        "https://m.media-amazon.com/images/M/MV5BNjQ1NzY2MzMzN15BMl5BanBnXkFtZTcwOTg4MzUzMQ@@._V1_SX300.jpg",
-    },
-    {
-      Title: "Siren",
-      Year: "2010",
-      imdbID: "tt1548635",
-      Type: "movie",
-      Poster:
-        "https://m.media-amazon.com/images/M/MV5BNzE0MjczMDM2MF5BMl5BanBnXkFtZTgwODYxODg0MDE@._V1_SX300.jpg",
-    },
-    {
-      Title: "K2: Siren of the Himalayas",
-      Year: "2012",
-      imdbID: "tt2467442",
-      Type: "movie",
-      Poster:
-        "https://m.media-amazon.com/images/M/MV5BMTkxMzY0MDEyN15BMl5BanBnXkFtZTgwMzc5MjE4MjE@._V1_SX300.jpg",
-    },
-    {
-      Title: "Siren head",
-      Year: "2020",
-      imdbID: "tt12706382",
-      Type: "movie",
-      Poster:
-        "https://m.media-amazon.com/images/M/MV5BOWNkMTFkZjktN2JkNy00ZTQ2LWI4MTUtZjZkYzRkMWYwNmI0XkEyXkFqcGdeQXVyNDcwNDE0Nzk@._V1_SX300.jpg",
-    },
-    {
-      Title: "The Siren",
-      Year: "2019",
-      imdbID: "tt7144200",
-      Type: "movie",
-      Poster:
-        "https://m.media-amazon.com/images/M/MV5BZWM0M2U1NzAtNGMwZS00ZDUyLWEyMTktNmU4NGY2MmJmYzEzXkEyXkFqcGdeQXVyMjEwNDY4NzU@._V1_SX300.jpg",
     },
     {
       Title: "The Flash",
@@ -138,20 +144,12 @@ export default function Pagetwo() {
       Poster:
         "https://m.media-amazon.com/images/M/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_SX300.jpg",
     },
-    {
-      Title: "Class of 2020",
-      Year: "2020–",
-      imdbID: "tt11581534",
-      Type: "series",
-      Poster:
-        "https://m.media-amazon.com/images/M/MV5BOTkwYjNhMzktMmJkNy00MmIwLWI2MGYtYzY1YTE3ZTA2ODYyXkEyXkFqcGdeQXVyODI2MzM0MTM@._V1_SX300.jpg",
-    },
+
   ]);
 
   return (
     <div>
-      <h2>Latest</h2>
-      <div className="container">
+     <div className="container">
         {movies.map((movie) => (
           <div className="mp" key={movie.id}>
             <img src={movie.Poster} alt="movie" />
